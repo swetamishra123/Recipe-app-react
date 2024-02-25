@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Recipe App using React.js
 
-## Available Scripts
+This is a simple food recipe app built using React.js. It fetches food recipes from the Edamam API and displays them in a user-friendly interface.
 
-In the project directory, you can run:
+## Pre-requisite
 
-### `npm start`
+- React hooks
+- React components
+- JavaScript ES6
+- API
+- CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Approach
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app utilizes React hooks such as `useEffect` and `useState` to fetch data from the Edamam API and manage the state of the application. The basic approach involves:
 
-### `npm test`
+1. **Fetching Food Recipe API Key**: To get started, you need to sign up on Edamam and obtain your API credentials (Application ID and Application Key) from the Developer section.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Creating React App**: Use `create-react-app` to bootstrap your project and set up the necessary environment.
 
-### `npm run build`
+3. **Installing Required Packages**: Install any required packages, although the core dependencies will be handled by `create-react-app`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Implementing Components**: Build components to display food recipes and manage API requests. Use React hooks to handle state and lifecycle.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Food Recipe API Key
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Sign up on [Edamam](https://developer.edamam.com/).
+2. Go to the APIs section in the navbar.
+3. Click "Start Now" in the Developer section.
+4. Navigate to the Dashboard > Application > Recipe Search API.
+5. Copy your Application ID and Application Key provided by Edamam.
 
-### `npm run eject`
+## Project Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Step 1: Create React App
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npx create-react-app foldername
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 2: Move to Project Folder
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd foldername
+```
 
-## Learn More
+### Step 3: Update API Credentials
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Inside `src/App.js`, replace `<YOUR_APP_ID>` and `<YOUR_APP_KEY>` with your Edamam API credentials.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```
+recipe-app/
+│
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/your-username/recipe-app.git
+```
 
-### Making a Progressive Web App
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+3. Run the app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions are welcome! Fork the repository, create a branch, make your changes, and submit a pull request.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
